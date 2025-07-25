@@ -49,7 +49,7 @@ jobs:
             tags: |
                 ${{vars.DOCKERHUB_USERNAME}}/solar-system:${{github.sha}}
         - name: dhcr login #github container registry
-          uses: docker/login-action@  #ghcr login we use regular docker command also use docker login username is ghcr.io and password is github token
+          uses: docker/login-action@v3  #ghcr login we use regular docker command also use docker login username is ghcr.io and password is github token
           with:
             registry: ghcr.io #by default docker will use docker registry so we are giving resgistry
             username: ${{github.repository_owner}}
