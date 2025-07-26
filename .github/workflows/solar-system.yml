@@ -63,6 +63,6 @@ jobs:
             push: true # want push true means it will push to registry
             tags: |
                 ${{vars.DOCKERHUB_USERNAME}}/Solar_System_CICD:${{github.sha}}  
-                ghcr.io/${{github.repository_owner}}/Solar_System_CICD:${{github.sha}}
+                ghcr.io/shirly/Solar_System_CICD:${{github.sha}}
 #once taged it will push to both registries
 
