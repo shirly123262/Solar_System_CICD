@@ -46,7 +46,7 @@ jobs:
           uses: docker/build-push-action@v4
           with:
             context: .
-            push: false # want push true means it will push to registry
+            push: false # want push true means it will push to registry as
             tags: |
                 ${{vars.DOCKERHUB_USERNAME}}/solar-system:${{github.sha}}
         - name: dhcr login #github container registry
